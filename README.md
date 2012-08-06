@@ -283,4 +283,4 @@
   
 ##Sources
 
-![I don't know what i'm doing](blob/master/dog.jpg "Doggy")
+![I don't know what i'm doing](css-style-guide/blob/master/dog.jpg "Doggy")
