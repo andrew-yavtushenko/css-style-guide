@@ -195,10 +195,12 @@
       display: block;
       position: relative;
     }
+    
     .class-three {
       display: block; 
       position: relative;
     }
+    
     .lonely-rule {position: relative;}
   ```
   #####bad:
