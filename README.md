@@ -94,10 +94,10 @@
 * ####Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
   #####good      
   ```css
-  .my-class {
-    height: 300px;
-    width: 100px;
-  }
+    .my-class {
+      height: 300px;
+      width: 100px;
+    }
   ```
 
 * ####All blocks of rules should be vertically indented with one line
