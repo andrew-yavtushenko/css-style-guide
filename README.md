@@ -15,8 +15,10 @@
   ```.myClass, .my_class, onemoreclass```     
 
 * ####Always use low register names     
-  #####good:        
-  ```.my-class```     
+  #####good:      
+  ```css
+    test
+  ```
 
 * ####Use ID and class names that are as short as possible but as long as necessary.    
   #####good:    
