@@ -6,24 +6,24 @@
   Use tools such as the [W3C CSS](http://jigsaw.w3.org/css-validator/) validator to test.     
   Using valid CSS is a measurable baseline quality attribute that allows to spot CSS code that may not have any effect and can be removed, and that ensures proper CSS usage.
 
-* ####Use IDs only for javascript
+* ####Use IDs only for javascript   
 
-* ####Class and ID names should be made with dash (-)   
-  #####good:
-  ```.my-class, #special-offer```    
-  #####bad:
-  ```.myClass, .my_class, onemoreclass```   
+* ####Class and ID names should be made with dash (-)       
+  #####good:    
+  ```.my-class, #special-offer```     
+  #####bad:     
+  ```.myClass, .my_class, onemoreclass```     
 
-* ####Always use low register names
-  #####good:      
-  ```.my-class```
-  #####bad:
-  ```.MY-CLASS, myClass, MyClass, .MyClAsS,```
+* ####Always use low register names     
+  #####good:        
+  ```.my-class```     
+  #####bad:     
+  ```.MY-CLASS, myClass, MyClass, .MyClAsS,```      
 
-* ####Use ID and class names that are as short as possible but as long as necessary.
-  #####good:
-  ```.nav, .author```   
-  #####bad:
+* ####Use ID and class names that are as short as possible but as long as necessary.    
+  #####good:    
+  ```.nav, .author```     
+  #####bad:   
   ```.navigation, .atr```    
 
 * ####Name classes and ID semantically, i.e. name it not by it's look but by it's function   
