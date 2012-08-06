@@ -9,7 +9,7 @@
 * ####Use IDs only for javascript   
 
 * ####Class and ID names should be made with dash (-)       
-  #####good:    
+  #####good:       
   ```.my-class, #special-offer```     
   #####bad:     
   ```.myClass, .my_class, onemoreclass```     
