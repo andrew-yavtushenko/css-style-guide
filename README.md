@@ -8,7 +8,7 @@
 
 3. Selector name and opening curly brace should be separated with space
 
-4. Summary
+###Summary
 
 ``` css
 .my-class {
