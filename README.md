@@ -11,25 +11,25 @@
 * ####Class and ID names should be made with dash (-)   
   ######good:
   ```.my-class, #special-offer```    
-  ##########bad:
+  #####bad:
   ```.myClass, .my_class, onemoreclass```   
 
 * ####Always use low register names
   ######good:      
   ```.my-class```
-  ##########bad:
+  #####bad:
   ```.MY-CLASS, myClass, MyClass, .MyClAsS,```
 
 * ####Use ID and class names that are as short as possible but as long as necessary.
   ######good:
   ```.nav, .author```   
-  ##########bad:
+  #####bad:
   ```.navigation, .atr```    
 
 * ####Name classes and ID semantically, i.e. name it not by it's look but by it's function   
   ######good:
   ```.promo-box, .selected-user, .remove-button```   
-  ##########bad:
+  #####bad:
   ```.black-box, .yellow-user, .red-button```   
   if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time or ask someone
 
@@ -37,11 +37,11 @@
   Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
   ######good:
   ```.example, .error```
-  ##########bad:
+  #####bad:
   ```ul.example, div.error```
   
 * ####Use shorthand properties where possible.     
-  ######good:
+  #####good:
   ```css
     .my-class {
       background: url(images/cat.png) no-repeat center top #fff;
@@ -54,7 +54,7 @@
       padding: 10px 10px 20px 30px;
     }
   ```
-  ##########bad:
+  #####bad:
   ```css
     .my-class {
       box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 0px 10px -2px, black 0px 0px 11px 0px;
@@ -75,12 +75,12 @@
   ```
 
 * ####Do not use units after 0 values unless they are required.
-  ######good:    
+  #####good:    
   ```
     margin: 0;
     padding: 0;
   ```
-  ##########bad:    
+  #####bad:    
   ```
     margin: 0px;
     padding: 0px;
