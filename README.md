@@ -95,36 +95,40 @@ It’s tempting to address styling differences over user agent detection or spec
 ```
 
 2. All blocks of rules should be vertically indented with one line
-######good      
-```css
-.my-class {
-  height: 300px;
-  width: 100px;
-}             
-      
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-```
-######bad      
-```css
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-```
 
 3. Selector name and opening curly brace should be separated with space
+good: ```.class {rule: value;}```
+bad: ```.class{rule: value;}```
 
 4. Colon and rule value should be separated with space
+good: ```.class {rule: value;}```
+bad: ```.class{rule:value;}```
 
 5. If block has only one rule and one selector, selector and rule can stay on one line
-  in other case each selector should stay on separate line, same for rules – each of it should stay on separate line
+  in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
+good:
+```css
+.class-one,
+.class-two,
+.class-three {
+  display: block;
+  position: relative;
+}
+.class-three {
+  display: block; 
+  position: relative;
+}
+```
+bad:
+```css
+.class-one, .class-two, .class-three {
+  display: block;
+  position: relative;
+}
+.class-three {
+  display: block; position: relative;
+}
+```
   
 6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
 
