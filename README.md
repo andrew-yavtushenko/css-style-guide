@@ -162,17 +162,17 @@
 * ####Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
   ```css
     .my-crossbrowser-class {
-      background-image: -webkit-linear-gradient(#444, #222);
       background-image:    -moz-linear-gradient(#444, #222);
       background-image:     -ms-linear-gradient(#444, #222);
       background-image:      -o-linear-gradient(#444, #222);
+      background-image: -webkit-linear-gradient(#444, #222);
       background-image:         linear-gradient(#444, #222);
     }
     .another-crossbrowser-class {
-      -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
          -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
           -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
            -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
               box-shadow: 0 0 3px rgba(0,0,0,0.5);
     }
   ```
@@ -211,3 +211,16 @@
 
 * ####Alphabetize declarations    
   Put declarations in alphabetical order in order to achieve consistent code in a way that is easy to remember and maintain. Ignore vendor-specific prefixes for sorting purposes.
+  
+  ```css
+    .my-class {
+      background: url(images/cat.png) no-repeat center top #fff;
+      border: 1px solid #fff;
+      box-shadow: 
+        0 0 3px rgba(0,0,0,0.5),
+        0 0 10px -2px rgba(0,0,0,0.2),
+        0 0 11px #000;
+      margin: 10px 30px;
+      padding: 10px 10px 20px 30px;
+    }
+  ```
