@@ -1,67 +1,6 @@
 #Style guides for CSS code
 
-##Indents
-
-1. Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces
-
-2. All blocks of rules should be vertically indented with one line
-
-3. Selector name and opening curly brace should be separated with space
-
-4. Colon and rule value should be separated with space
-
-5. If block has only one rule and one selector, selector and rule can stay on one line
-  in other case each selector should stay on separate line, same for rules – each of it should stay on separate line
-  
-6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
-
-7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
-
-###Summary of indents in code
-
-``` css
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-
-.my-second-class {
-  display: block;
-  position: relative;
-}
-
-.class-with-one-rule {position: relative;}
-
-.class-one,
-.class-two,
-.class-three {
-  background: #ccc;
-}
-
-.my-crossbrowser-class {
-  background-image: -webkit-linear-gradient(#444, #222);
-  background-image:    -moz-linear-gradient(#444, #222);
-  background-image:     -ms-linear-gradient(#444, #222);
-  background-image:      -o-linear-gradient(#444, #222);
-  background-image:         linear-gradient(#444, #222);
-}
-.another-crossbrowser-class {
-  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-     -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-      -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-       -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-          box-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
-
-.multiple-values {
-  box-shadow: 
-    0 0 3px rgba(0,0,0,0.5),
-    0 0 10px -2px rgba(0,0,0,0.2),
-    0 0 11px #000;
-}
-```
-
-##Naming
+##Style Rules
 
 1. Use IDs only for javascript
 
@@ -143,3 +82,95 @@ bad: ```color: #eebbcc;```
 
 11. Avoid user agent detection as well as CSS “hacks”—try a different approach first.   
 It’s tempting to address styling differences over user agent detection or special CSS filters, workarounds, and hacks. Both approaches should be considered last resort in order to achieve and maintain an efficient and manageable code base. Put another way, giving detection and hacks a free pass will hurt projects in the long run as projects tend to take the way of least resistance. That is, allowing and making it easy to use detection and hacks means using detection and hacks more frequently—and more frequently is too frequently.
+
+##Formating rules
+
+1. Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
+######good      
+```css
+.my-class {
+  height: 300px;
+  width: 100px;
+}
+```
+
+2. All blocks of rules should be vertically indented with one line
+######good      
+```css
+.my-class {
+  height: 300px;
+  width: 100px;
+}   
+.my-class {
+  height: 300px;
+  width: 100px;
+}
+```
+######bad      
+```css
+.my-class {
+  height: 300px;
+  width: 100px;
+}
+.my-class {
+  height: 300px;
+  width: 100px;
+}
+
+```
+
+3. Selector name and opening curly brace should be separated with space
+
+4. Colon and rule value should be separated with space
+
+5. If block has only one rule and one selector, selector and rule can stay on one line
+  in other case each selector should stay on separate line, same for rules – each of it should stay on separate line
+  
+6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
+
+7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
+
+###Summary of formating
+
+``` css
+.my-class {
+  height: 300px;
+  width: 100px;
+}
+
+.my-second-class {
+  display: block;
+  position: relative;
+}
+
+.class-with-one-rule {position: relative;}
+
+.class-one,
+.class-two,
+.class-three {
+  background: #ccc;
+}
+
+.my-crossbrowser-class {
+  background-image: -webkit-linear-gradient(#444, #222);
+  background-image:    -moz-linear-gradient(#444, #222);
+  background-image:     -ms-linear-gradient(#444, #222);
+  background-image:      -o-linear-gradient(#444, #222);
+  background-image:         linear-gradient(#444, #222);
+}
+.another-crossbrowser-class {
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+     -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+      -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+       -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+          box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.multiple-values {
+  box-shadow: 
+    0 0 3px rgba(0,0,0,0.5),
+    0 0 10px -2px rgba(0,0,0,0.2),
+    0 0 11px #000;
+}
+```
+
