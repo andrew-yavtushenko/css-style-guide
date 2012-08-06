@@ -63,13 +63,25 @@
 
 ##Naming
 
-1. Class and ID names should be made with hyphens (-)
-
+1. Class and ID names should be made with hyphens (-)   
 ```.my-class, .sidebar-my-class``` good,    
 ```.myClass, .my_class, onemoreclass``` bad,     
 ```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead    
 
-2. Don't use acronyms
+2. Don't use acronyms, class name should be long enough to make it readable, but not longer   
+```.big-userpic, .sidebar-quote, .banned-users```: good   
+```.b-pic, .sb-bdb, .wtf-omg, .sdfa-qweq```: bad    
+
+3. Use ID only in that cases when you need to match something unique    
+
+4. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
+```.promo-box, .selected-user, .remove-button``` good   
+```.black-box, .yellow-user, .red-button``` bad   
+
+5. Use as much classes and tags in selector as you need to match your element, but not more   
+```ul a, .sidebar footer, h1 small```: good   
+```.list ul li .block a, body .wrapper.content .sidebar.left footer, body header h1 small``` bad    
+
 
 
 ##Complex rules
