@@ -87,13 +87,16 @@
   ```
 
 * ####Do not use put 0s in front of values or lengths between -1 and 1.    
-  ####good: 
+  ####good:     
   ```font-size: .8em;```    
-  ####bad: ```font-size: 0.8em;```    
+  ####bad:    
+  ```font-size: 0.8em;```    
 
 * ####For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.   
-  ####good: ```color: #ebc;```    
-  ####bad: ```color: #eebbcc;```
+  ####good:     
+  ```color: #ebc;```    
+  ####bad:    
+  ```color: #eebbcc;```
 
 * ####Avoid user agent detection as well as CSS “hacks”—try a different approach first.   
   It’s tempting to address styling differences over user agent detection or special CSS filters, workarounds, and hacks. Both approaches should be considered last resort in order to achieve and maintain an efficient and manageable code base. Put another way, giving detection and hacks a free pass will hurt projects in the long run as projects tend to take the way of least resistance. That is, allowing and making it easy to use detection and hacks means using detection and hacks more frequently—and more frequently is too frequently.
