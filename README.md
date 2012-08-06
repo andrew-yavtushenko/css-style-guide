@@ -41,7 +41,7 @@
   ```ul.example, div.error```
   
 * ####Use shorthand properties where possible.     
-  #####good
+  #####good:
   ```css
     .my-class {
       background: url(images/cat.png) no-repeat center top #fff;
@@ -75,7 +75,7 @@
   ```
 
 * ####Do not use units after 0 values unless they are required.
-  #####good    
+  #####good:    
   ```
     margin: 0;
     padding: 0;
@@ -87,11 +87,11 @@
   ```
 
 * ####Do not use put 0s in front of values or lengths between -1 and 1.    
-  good: ```font-size: .8em;```    
+  ####good: ```font-size: .8em;```    
   bad: ```font-size: 0.8em;```    
 
 * ####For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.   
-  good: ```color: #ebc;```    
+  ####good: ```color: #ebc;```    
   bad: ```color: #eebbcc;```
 
 * ####Avoid user agent detection as well as CSS “hacks”—try a different approach first.   
@@ -100,7 +100,7 @@
 ##Formating rules
 
 * ####Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
-  #####good      
+  #####good:      
   ```css
     .my-class {
       height: 300px;
@@ -109,7 +109,7 @@
   ```
 
 * ####All blocks of rules should be vertically indented with one line
-  #####good      
+  #####good:      
   ```css
     .my-class {
       height: 300px;
@@ -134,16 +134,16 @@
   ```
 
 * ####Selector name and opening curly brace should be separated with space      
-  good: ```.class {rule: value;}```   
+  ####good: ```.class {rule: value;}```   
   bad: ```.class{rule: value;}```   
 
 * ####Colon and rule value should be separated with space    
-  good: ```.class {rule: value;}```   
+  ####good: ```.class {rule: value;}```   
   bad: ```.class{rule:value;}```    
 
 * ####If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
-  good:
+  ####good:
   ```css
     .class-one,
     .class-two,
@@ -197,7 +197,7 @@
   ```
 * ####Use single quotation marks for attribute selectors and property values where necessary.
   When quoting attribute selectors and property values, use single ('') rather than double ("") quotation marks. Do not use quotation marks in URI values (url()).    
-  good:
+  ####good:
   ```css
     body {
       background: url(images/cat.png)
