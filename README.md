@@ -284,11 +284,4 @@
 ##Sources
 If you have found yourself in such position   
 ![I don't know what i'm doing](//raw.github.com/andrew-yavtushenko/css-style-guide/master/dog.jpg "Doggy")    
-stop your miserable attempts to write something good    
-remove all that stinky code that you have done while trying to make something work    
-and search for solution here    
-[w3c](http://w3.org)   
-[w3schools](http://w3schools.com)   
-[Eric Meyer's book](http://meyerweb.com/eric/books/css-tdg/)   
-[stackoverflow](http://stackoverflow.com)      
-[teh internetz](http://google.com)   
+remove all code that don't work and search for solution here [w3c](http://w3.org), [w3schools](http://w3schools.com), [Eric Meyer's book](http://meyerweb.com/eric/books/css-tdg/), [stackoverflow](http://stackoverflow.com), [teh internetz](http://google.com)   
