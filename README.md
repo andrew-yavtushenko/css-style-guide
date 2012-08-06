@@ -94,6 +94,7 @@ Unless necessary (for example with helper classes), do not use element names in 
 ```ul.example, div.error```
   
 7. Use shorthand properties where possible.     
+
 ######good
 ```css
 .my-class {
