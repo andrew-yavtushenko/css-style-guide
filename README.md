@@ -208,3 +208,6 @@
       font-family: "open sans", arial, sans-serif;
     }
   ```
+
+* ####Alphabetize declarations    
+  Put declarations in alphabetical order in order to achieve consistent code in a way that is easy to remember and maintain. Ignore vendor-specific prefixes for sorting purposes.
