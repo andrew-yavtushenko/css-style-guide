@@ -10,9 +10,13 @@
 
 * ####Class and ID names should be made with dash (-)       
   #####good:       
-  ```.my-class, #special-offer```     
+  ```css
+    .my-class, #special-offer
+  ```     
   #####bad:     
-  ```.myClass, .my_class, onemoreclass```     
+  ```css
+    .myClass, .my_class, onemoreclass
+  ```     
 
 * ####Always use low register names     
   #####good:      
@@ -21,28 +25,40 @@
   ```
   #####bad:
   ```css
-    .MY-CLASS, myClass, MyClass, .MyClAsS  
+    .MY-CLASS, .myClass, .MyClass, .MyClAsS  
   ```
 
 * ####Use ID and class names that are as short as possible but as long as necessary.    
   #####good:    
-  ```.nav, .author```     
+  ```css
+    .nav, .author
+  ```     
   #####bad:   
-  ```.navigation, .atr```    
+  ```css
+    .navigation, .atr
+  ```    
 
 * ####Name classes and ID semantically, i.e. name it not by it's look but by it's function   
   #####good:
-  ```.promo-box, .selected-user, .remove-button```   
+  ```css
+    .promo-box, .selected-user, .remove-button
+  ```   
   #####bad:
-  ```.black-box, .yellow-user, .red-button```   
+  ```css
+    .black-box, .yellow-user, .red-button
+  ```   
   if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time or ask someone
 
 * ####Avoid qualifying ID and class names with type selectors.
   Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
   #####good:
-  ```.example, .error```
+  ```css
+    .example, .error
+  ```
   #####bad:
-  ```ul.example, div.error```
+  ```css
+    ul.example, div.error
+  ```
   
 * ####Use shorthand properties where possible.     
   #####good:
@@ -80,27 +96,35 @@
 
 * ####Do not use units after 0 values unless they are required.
   #####good:    
-  ```
+  ```css
     margin: 0;
     padding: 0;
   ```
   #####bad:    
-  ```
+  ```css
     margin: 0px;
     padding: 0px;
   ```
 
 * ####Do not use put 0s in front of values or lengths between -1 and 1.    
   #####good:     
-  ```font-size: .8em;```    
+  ```css
+    font-size: .8em;
+  ```    
   #####bad:    
-  ```font-size: 0.8em;```    
+  ```css
+    font-size: 0.8em;
+  ```    
 
 * ####For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.   
   #####good:     
-  ```color: #ebc;```    
+  ```css
+    color: #ebc;
+  ```    
   #####bad:    
-  ```color: #eebbcc;```
+  ```css
+    color: #eebbcc;
+  ```
 
 * ####Avoid user agent detection as well as CSS “hacks”—try a different approach first.   
   It’s tempting to address styling differences over user agent detection or special CSS filters, workarounds, and hacks. Both approaches should be considered last resort in order to achieve and maintain an efficient and manageable code base. Put another way, giving detection and hacks a free pass will hurt projects in the long run as projects tend to take the way of least resistance. That is, allowing and making it easy to use detection and hacks means using detection and hacks more frequently—and more frequently is too frequently.
@@ -143,15 +167,23 @@
 
 * ####Selector name and opening curly brace should be separated with space      
   #####good:    
-  ```.class {rule: value;}```   
+  ```css
+    .class {rule: value;}
+  ```   
   #####bad:     
-  ```.class{rule: value;}```   
+  ```css
+    .class{rule: value;}
+  ```   
 
 * ####Colon and rule value should be separated with space    
   #####good:      
-  ```.class {rule: value;}```   
+  ```css
+    .class {rule: value;}
+  ```   
   #####bad:       
-  ```.class{rule:value;}```    
+  ```css
+    .class{rule:value;}
+  ```    
 
 * ####If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
