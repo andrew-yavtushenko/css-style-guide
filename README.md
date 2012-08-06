@@ -125,66 +125,82 @@
     }
   ```
 
-3. Selector name and opening curly brace should be separated with space
-good: ```.class {rule: value;}```
-bad: ```.class{rule: value;}```
+* ####Selector name and opening curly brace should be separated with space      
+  good: ```.class {rule: value;}```
+  bad: ```.class{rule: value;}```
 
-4. Colon and rule value should be separated with space
-good: ```.class {rule: value;}```
-bad: ```.class{rule:value;}```
+* ####Colon and rule value should be separated with space    
+  good: ```.class {rule: value;}```
+  bad: ```.class{rule:value;}```
 
-5. If block has only one rule and one selector, selector and rule can stay on one line
+* ####If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
-good:
-```css
-.class-one,
-.class-two,
-.class-three {
-  display: block;
-  position: relative;
-}
-.class-three {
-  display: block; 
-  position: relative;
-}
-```
-bad:
-```css
-.class-one, .class-two, .class-three {
-  display: block;
-  position: relative;
-}
-.class-three {
-  display: block; position: relative;
-}
-```
+  good:
+  ```css
+    .class-one,
+    .class-two,
+    .class-three {
+      display: block;
+      position: relative;
+    }
+    .class-three {
+      display: block; 
+      position: relative;
+    }
+  ```
+  bad:
+  ```css
+    .class-one, .class-two, .class-three {
+      display: block;
+      position: relative;
+    }
+    .class-three {
+      display: block; position: relative;
+    }
+  ```
   
 * ####Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
-```css
-.my-crossbrowser-class {
-  background-image: -webkit-linear-gradient(#444, #222);
-  background-image:    -moz-linear-gradient(#444, #222);
-  background-image:     -ms-linear-gradient(#444, #222);
-  background-image:      -o-linear-gradient(#444, #222);
-  background-image:         linear-gradient(#444, #222);
-}
-.another-crossbrowser-class {
-   -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-      -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-       -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-        -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
-           box-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
-```
+  ```css
+    .my-crossbrowser-class {
+      background-image: -webkit-linear-gradient(#444, #222);
+      background-image:    -moz-linear-gradient(#444, #222);
+      background-image:     -ms-linear-gradient(#444, #222);
+      background-image:      -o-linear-gradient(#444, #222);
+      background-image:         linear-gradient(#444, #222);
+    }
+    .another-crossbrowser-class {
+      -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+          -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+           -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+              box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    }
+  ```
 
-7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
+* ####On rules with multiple values (box-shadow or gradient), each value should stay on separate line
+  ``` css
+    .multiple-values {
+      box-shadow: 
+        0 0 3px rgba(0,0,0,0.5),
+        0 0 10px -2px rgba(0,0,0,0.2),
+        0 0 11px #000;
+    }
+  ```
+* ####Use single quotation marks for attribute selectors and property values where necessary.
+  When quoting attribute selectors and property values, use single ('') rather than double ("") quotation marks. Do not use quotation marks in URI values (url()).
+  good:
+  ```css
+    @import url(//www.google.com/css/maia.css);
 
-``` css
-.multiple-values {
-  box-shadow: 
-    0 0 3px rgba(0,0,0,0.5),
-    0 0 10px -2px rgba(0,0,0,0.2),
-    0 0 11px #000;
-}
-```
+    html {
+      font-family: 'open sans', arial, sans-serif;
+    }
+  ```
+  bad:
+  ```css
+    @import url(//www.google.com/css/maia.css);
 
+    html {
+      font-family: 'open sans', arial, sans-serif;
+    }
+  ```
