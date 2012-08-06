@@ -64,8 +64,8 @@
 ##Naming
 
 1. Class and ID names should be made with hyphens (-)   
-```.my-class, #special-offer``` good,    
-```.myClass, .my_class, onemoreclass``` bad,     
+```.my-class, #special-offer``` good    
+```.myClass, .my_class, onemoreclass``` bad     
 
 2. Don't use acronyms, class name should be long enough to make it readable, but not longer   
 ```.big-userpic, .sidebar-quote, .banned-users```: good   
@@ -76,6 +76,7 @@
 4. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
 ```.promo-box, .selected-user, .remove-button``` good   
 ```.black-box, .yellow-user, .red-button``` bad   
+if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time
 
 5. Use as much classes and tags in selector as you need to match your element, but not more   
 ```ul a, .sidebar footer, h1 small```: good   
