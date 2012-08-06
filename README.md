@@ -287,8 +287,8 @@ If you have found yourself in such position
 stop your miserable attempts to write something good    
 remove all that stinky code that you have done while trying to make something work    
 and search for solution here    
-[w3c](//w3.org)   
-[w3schools](//w3schools.com)   
-[Eric Meyer's book](//meyerweb.com/eric/books/css-tdg/)   
-[stackoverflow](//stackoverflow.com)      
-[teh internetz](//google.com)   
+[w3c](http://w3.org)   
+[w3schools](http://w3schools.com)   
+[Eric Meyer's book](http://meyerweb.com/eric/books/css-tdg/)   
+[stackoverflow](http://stackoverflow.com)      
+[teh internetz](http://google.com)   
