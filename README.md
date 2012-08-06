@@ -282,5 +282,13 @@
   
   
 ##Sources
-
-![I don't know what i'm doing](//raw.github.com/andrew-yavtushenko/css-style-guide/master/dog.jpg "Doggy")
+If you have found yourself in such position   
+![I don't know what i'm doing](//raw.github.com/andrew-yavtushenko/css-style-guide/master/dog.jpg "Doggy")    
+stop your miserable attempts to write something good    
+remove all that stinky code that you have done while trying to make something work    
+and search for solution here    
+[w3c](//w3.org)   
+[w3schools](//w3schools.com)   
+[Eric Meyer's book](//meyerweb.com/eric/books/css-tdg/)   
+[stackoverflow](//stackoverflow.com)      
+[teh internetz](//google.com)   
