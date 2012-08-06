@@ -17,8 +17,6 @@
 * ####Always use low register names     
   #####good:        
   ```.my-class```     
-  #####bad:     
-  ```.MY-CLASS, myClass, MyClass, .MyClAsS,```      
 
 * ####Use ID and class names that are as short as possible but as long as necessary.    
   #####good:    
