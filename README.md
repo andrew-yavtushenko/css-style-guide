@@ -93,38 +93,37 @@ Unless necessary (for example with helper classes), do not use element names in 
 ######bad:
 ```ul.example, div.error```
   
-7. Use shorthand properties where possible.
-
-  
-  ```css
-  .my-class {
-    background: url(images/cat.png) no-repeat center top #fff;
-    border: 1px solid #fff;
-    box-shadow: 
-      0 0 3px rgba(0,0,0,0.5),
-      0 0 10px -2px rgba(0,0,0,0.2),
-      0 0 11px #000;
-    margin: 10px 30px;
-    padding: 10px 10px 20px 30px;
-  }
-  ```
+7. Use shorthand properties where possible.     
+######good
+```css
+.my-class {
+  background: url(images/cat.png) no-repeat center top #fff;
+  border: 1px solid #fff;
+  box-shadow: 
+    0 0 3px rgba(0,0,0,0.5),
+    0 0 10px -2px rgba(0,0,0,0.2),
+    0 0 11px #000;
+  margin: 10px 30px;
+  padding: 10px 10px 20px 30px;
+}
+```
 ######bad
-  ```css
-  .my-class {
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 0px 10px -2px, black 0px 0px 11px 0px;
-    background-color: #fff;
-    background-image: url(images/cat.png);
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-top: 10px;
-  }
-  
-  ```
+```css
+.my-class {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 0px 10px -2px, black 0px 0px 11px 0px;
+  background-color: #fff;
+  background-image: url(images/cat.png);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+```
