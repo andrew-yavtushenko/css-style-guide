@@ -103,7 +103,7 @@ Unless necessary (for example with helper classes), do not use element names in 
     0 0 3px rgba(0,0,0,0.5),
     0 0 10px -2px rgba(0,0,0,0.2),
     0 0 11px #000;
-  margin: 10px 30px;
+margin: 10px 30px;
   padding: 10px 10px 20px 30px;
 }
 ```
