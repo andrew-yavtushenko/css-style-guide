@@ -48,7 +48,8 @@
 ##Complex rules
 
 Some of the rules in CSS can handle many properties
-for example 
+
+for example:
 
 ```css
 .my-class {
