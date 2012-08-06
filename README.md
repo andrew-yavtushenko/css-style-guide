@@ -279,7 +279,7 @@
       padding: 10px 10px 20px 30px;
     }
   ```
-  
+* ####If you are starting new project from the scratch always use [reset.css](//meyerweb.com/eric/tools/css/reset/index.html)
   
 ##Sources
 If you have found yourself in such position   
