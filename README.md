@@ -66,7 +66,7 @@
 1. Use IDs only for javascript
 
 2. Class and ID names should be made with dash (-)   
-#####good:
+######good:
 ```.my-class, #special-offer```    
 ####bad:
 ```.myClass, .my_class, onemoreclass```   
@@ -74,23 +74,23 @@
 3. Always user low register
 
 4. Use ID and class names that are as short as possible but as long as necessary.
-#####good:
+######good:
 ```.nav, .author```   
-#####bad:
-```#navigation, .atr```    
+######bad:
+```.navigation, .atr```    
 
 5. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
-#####good:
+######good:
 ```.promo-box, .selected-user, .remove-button```   
-#####bad:
+######bad:
 ```.black-box, .yellow-user, .red-button```   
 if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time or ask someone
 
 6. Avoid qualifying ID and class names with type selectors.
 Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
-#####good:
+######good:
 ```.example, .error```
-#####bad:
+######bad:
 ```ul.example, div.error```
   
 7. Use shorthand properties where possible.
@@ -108,7 +108,7 @@ Unless necessary (for example with helper classes), do not use element names in 
     padding: 10px 10px 20px 30px;
   }
   ```
-#####bad
+######bad
   ```css
   .my-class {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 0px 10px -2px, black 0px 0px 11px 0px;
