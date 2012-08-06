@@ -1,6 +1,10 @@
 #Style guides for CSS code
 
 ##Style Rules
+* ####Use valid CSS where possible.
+  Unless dealing with CSS validator bugs or requiring proprietary syntax, use valid CSS code.     
+  Use tools such as the [W3C CSS](http://jigsaw.w3.org/css-validator/) validator to test.     
+  Using valid CSS is a measurable baseline quality attribute that allows to spot CSS code that may not have any effect and can be removed, and that ensures proper CSS usage.
 
 * ####Use IDs only for javascript
 
