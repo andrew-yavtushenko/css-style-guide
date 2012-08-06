@@ -131,30 +131,7 @@ bad:
 ```
   
 6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
-
-7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
-
-###Summary of formating
-
-``` css
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-
-.my-second-class {
-  display: block;
-  position: relative;
-}
-
-.class-with-one-rule {position: relative;}
-
-.class-one,
-.class-two,
-.class-three {
-  background: #ccc;
-}
-
+```css
 .my-crossbrowser-class {
   background-image: -webkit-linear-gradient(#444, #222);
   background-image:    -moz-linear-gradient(#444, #222);
@@ -169,7 +146,11 @@ bad:
        -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
           box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
+```
 
+7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
+
+``` css
 .multiple-values {
   box-shadow: 
     0 0 3px rgba(0,0,0,0.5),
