@@ -116,7 +116,6 @@ It’s tempting to address styling differences over user agent detection or spec
   height: 300px;
   width: 100px;
 }
-
 ```
 
 3. Selector name and opening curly brace should be separated with space
