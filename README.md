@@ -66,7 +66,6 @@
 1. Class and ID names should be made with hyphens (-)   
 ```.my-class, #special-offer``` good,    
 ```.myClass, .my_class, onemoreclass``` bad,     
-```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead    
 
 2. Don't use acronyms, class name should be long enough to make it readable, but not longer   
 ```.big-userpic, .sidebar-quote, .banned-users```: good   
