@@ -10,17 +10,19 @@
 
 4. Colon and rule value should be separated with space
 
-5. If block (selector with one or more rules) has only one rule, it can stay on a same line with selector name
+5. If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line
   
 6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
+
+7. On rules with multiple values (box-shadow or gradient ), each value should stay on separate line
 
 ###Summary of indents in code
 
 ``` css
 .my-class {
-  width: 100px;
   height: 300px;
+  width: 100px;
 }
 
 .my-second-class {
@@ -43,7 +45,29 @@
   background-image:      -o-linear-gradient(#444, #222);
   background-image:         linear-gradient(#444, #222);
 }
+.another-crossbrowser-class {
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+     -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+      -ms-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+       -o-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+          box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.multiple-values {
+  box-shadow: 
+    0 0 3px rgba(0,0,0,0.5),
+    0 0 10px -2px rgba(0,0,0,0.2),
+    0 0 11px #000;
+}
 ```
+
+##Naming
+
+1. Class and ID names should be made with hyphens (-)
+```.my-class, .sidebar-my-class``` good, ```.myClass, .my_class, onemoreclass``` bad, ```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead
+
+2. Don't use acronyms
+
 
 ##Complex rules
 
@@ -62,5 +86,8 @@ for example:
   margin: 10px 30px;
   padding: 10px 10px 20px 30px;
 }
-
 ```
+
+Try to use such rules in common and avoid using specific rules like ```background-repeat``` or ```border-bottom-color```
+
+Use specific rules when you need to define only this specific rule for current selector, or when you need to redefine existing rule
