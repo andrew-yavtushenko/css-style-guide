@@ -64,7 +64,10 @@
 ##Naming
 
 1. Class and ID names should be made with hyphens (-)
-```.my-class, .sidebar-my-class``` good, ```.myClass, .my_class, onemoreclass``` bad, ```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead
+
+```.my-class, .sidebar-my-class``` good, 
+```.myClass, .my_class, onemoreclass``` bad, 
+```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead
 
 2. Don't use acronyms
 
