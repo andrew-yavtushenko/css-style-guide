@@ -104,7 +104,7 @@
 ##Formating rules
 
 * ####Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
-  ######good:      
+  #####good:      
   ```css
     .my-class {
       height: 300px;
@@ -113,7 +113,7 @@
   ```
 
 * ####All blocks of rules should be vertically indented with one line
-  ######good:      
+  #####good:      
   ```css
     .my-class {
       height: 300px;
@@ -138,12 +138,16 @@
   ```
 
 * ####Selector name and opening curly brace should be separated with space      
-  #####good: ```.class {rule: value;}```   
-  #####bad: ```.class{rule: value;}```   
+  #####good:    
+  ```.class {rule: value;}```   
+  #####bad:     
+  ```.class{rule: value;}```   
 
 * ####Colon and rule value should be separated with space    
-  #####good: ```.class {rule: value;}```   
-  #####bad: ```.class{rule:value;}```    
+  #####good:      
+  ```.class {rule: value;}```   
+  #####bad:       
+  ```.class{rule:value;}```    
 
 * ####If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
