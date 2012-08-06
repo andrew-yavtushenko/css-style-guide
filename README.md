@@ -95,18 +95,18 @@ Unless necessary (for example with helper classes), do not use element names in 
   
 7. Use shorthand properties where possible.     
 ######good
-```css
-.my-class {
-  background: url(images/cat.png) no-repeat center top #fff;
-  border: 1px solid #fff;
-  box-shadow: 
-    0 0 3px rgba(0,0,0,0.5),
-    0 0 10px -2px rgba(0,0,0,0.2),
-    0 0 11px #000;
-  margin: 10px 30px;
-  padding: 10px 10px 20px 30px;
-}
-```
+  ```css
+    .my-class {
+      background: url(images/cat.png) no-repeat center top #fff;
+      border: 1px solid #fff;
+      box-shadow: 
+        0 0 3px rgba(0,0,0,0.5),
+        0 0 10px -2px rgba(0,0,0,0.2),
+        0 0 11px #000;
+      margin: 10px 30px;
+      padding: 10px 10px 20px 30px;
+    }
+  ```
 ######bad
 ```css
 .my-class {
