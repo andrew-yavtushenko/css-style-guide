@@ -64,7 +64,7 @@
 ##Naming
 
 1. Class and ID names should be made with hyphens (-)   
-```.my-class, .sidebar-my-class``` good,    
+```.my-class, #special-offer``` good,    
 ```.myClass, .my_class, onemoreclass``` bad,     
 ```.lalalaidontknwowhathyphensare``` i find this shit in your code – you're dead    
 
@@ -82,6 +82,7 @@
 ```ul a, .sidebar footer, h1 small```: good   
 ```.list ul li .block a, body .wrapper.content .sidebar.left footer, body header h1 small``` bad    
 
+6. Don't use only classes IDs and tag names, try to use all power selector naming [read part "Selectors"]("https://dl.dropbox.com/u/4301006/css.pdf")
 
 
 ##Complex rules
