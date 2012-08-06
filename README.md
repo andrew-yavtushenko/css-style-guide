@@ -126,12 +126,12 @@
   ```
 
 * ####Selector name and opening curly brace should be separated with space      
-  good: ```.class {rule: value;}```
-  bad: ```.class{rule: value;}```
+  good: ```.class {rule: value;}```   
+  bad: ```.class{rule: value;}```   
 
 * ####Colon and rule value should be separated with space    
-  good: ```.class {rule: value;}```
-  bad: ```.class{rule:value;}```
+  good: ```.class {rule: value;}```   
+  bad: ```.class{rule:value;}```    
 
 * ####If block has only one rule and one selector, selector and rule can stay on one line
   in other case each selector should stay on separate line, same for rules – each of it should stay on separate line    
@@ -187,10 +187,12 @@
     }
   ```
 * ####Use single quotation marks for attribute selectors and property values where necessary.
-  When quoting attribute selectors and property values, use single ('') rather than double ("") quotation marks. Do not use quotation marks in URI values (url()).
+  When quoting attribute selectors and property values, use single ('') rather than double ("") quotation marks. Do not use quotation marks in URI values (url()).    
   good:
   ```css
-    @import url(//www.google.com/css/maia.css);
+    body {
+      background: url(images/cat.png)
+    }
 
     html {
       font-family: 'open sans', arial, sans-serif;
@@ -198,9 +200,11 @@
   ```
   bad:
   ```css
-    @import url(//www.google.com/css/maia.css);
+    body {
+      background: url("images/cat.png")
+    }
 
     html {
-      font-family: 'open sans', arial, sans-serif;
+      font-family: "open sans", arial, sans-serif;
     }
   ```
