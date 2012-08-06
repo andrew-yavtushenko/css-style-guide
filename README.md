@@ -10,7 +10,7 @@
   #####bad:
   ```.myClass, .my_class, onemoreclass```   
 
-* ####Always user low register
+* ####Always use low register names
 
 * ####Use ID and class names that are as short as possible but as long as necessary.
   #####good:
@@ -72,9 +72,15 @@
     margin: 0;
     padding: 0;
   ```
+  #####bad    
+  ```
+    margin: 0px;
+    padding: 0px;
+  ```
 
 * ####Do not use put 0s in front of values or lengths between -1 and 1.    
-  ```font-size: .8em;```    
+  good: ```font-size: .8em;```    
+  bad: ```font-size: 0.8em;```    
 
 * ####For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.   
   good: ```color: #ebc;```    
@@ -85,16 +91,39 @@
 
 ##Formating rules
 
-1. Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
-#####good      
-```css
-.my-class {
-  height: 300px;
-  width: 100px;
-}
-```
+* ####Horizontal indents (tabs) should be made by spaces (soft-tabs), one indent – two spaces    
+  #####good      
+  ```css
+  .my-class {
+    height: 300px;
+    width: 100px;
+  }
+  ```
 
-2. All blocks of rules should be vertically indented with one line
+* ####All blocks of rules should be vertically indented with one line
+  #####good      
+  ```css
+    .my-class {
+      height: 300px;
+      width: 100px;
+    }   
+
+    .another-class {
+      height: 400px;
+      width: 200px;
+    }
+  ```
+  #####bad      
+  ```css
+    .my-class {
+      height: 300px;
+      width: 100px;
+    }   
+    .another-class {
+      height: 400px;
+      width: 200px;
+    }
+  ```
 
 3. Selector name and opening curly brace should be separated with space
 good: ```.class {rule: value;}```
