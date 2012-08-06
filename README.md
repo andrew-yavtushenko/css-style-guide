@@ -13,7 +13,7 @@
   
 5. Rules with browser-specific prefixes should be indented in such way to make properties stay on on vertical line
 
-###Summary in code
+###Summary of indents in code
 
 ``` css
 .my-class {
@@ -36,9 +36,9 @@
 
 .my-crossbrowser-class {
   background-image: -webkit-linear-gradient( #444, #222 );
-	background-image:    -moz-linear-gradient( #444, #222 );
-	background-image:     -ms-linear-gradient( #444, #222 );
-	background-image:      -o-linear-gradient( #444, #222 );
-	background-image:         linear-gradient( #444, #222 );
+  background-image:    -moz-linear-gradient( #444, #222 );
+  background-image:     -ms-linear-gradient( #444, #222 );
+  background-image:      -o-linear-gradient( #444, #222 );
+  background-image:         linear-gradient( #444, #222 );
 }
 ```
