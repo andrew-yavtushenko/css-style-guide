@@ -15,7 +15,7 @@
   
 6. Rules with browser-specific prefixes should be indented in such way to make values stay on one vertical line
 
-7. On rules with multiple values (box-shadow or gradient ), each value should stay on separate line
+7. On rules with multiple values (box-shadow or gradient), each value should stay on separate line
 
 ###Summary of indents in code
 
@@ -63,45 +63,68 @@
 
 ##Naming
 
-1. Class and ID names should be made with dash (-)   
- good:  ```.my-class, #special-offer```    
-  bad:  ```.myClass, .my_class, onemoreclass```     
+1. Use IDs only for javascript
 
-2. Don't use acronyms, class name should be long enough to make it readable, but not longer   
- good:  ```.big-userpic, .sidebar-quote, .banned-users```   
-  bad:  ```.b-pic, .sb-bdb, .wtf-omg, .sdfa-qweq```    
+2. Class and ID names should be made with dash (-)   
+#####good:
+```.my-class, #special-offer```    
+####bad:
+```.myClass, .my_class, onemoreclass```   
 
-3. Use ID only in that cases when you need to match something unique    
+3. Always user low register
 
-4. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
- good:  ```.promo-box, .selected-user, .remove-button```   
-  bad:  ```.black-box, .yellow-user, .red-button```   
-if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time
+4. Use ID and class names that are as short as possible but as long as necessary.
+#####good:
+```.nav, .author```   
+#####bad:
+```#navigation, .atr```    
 
-5. Use as much classes and tags in selector as you need to match your element, but not more   
- good:  ```ul a, .sidebar footer, h1 small```   
-  bad:  ```.list ul li .block a, body .wrapper.content .sidebar.left footer, body header h1 small```    
+5. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
+#####good:
+```.promo-box, .selected-user, .remove-button```   
+#####bad:
+```.black-box, .yellow-user, .red-button```   
+if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time or ask someone
 
+6. Avoid qualifying ID and class names with type selectors.
+Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
+#####good:
+```.example, .error```
+#####bad:
+```ul.example, div.error```
+  
+7. Use shorthand properties where possible.
 
-##Complex rules
-
-Some of the rules in CSS can handle many properties
-
-for example:
-
-```css
-.my-class {
-  background: url(images/cat.png) no-repeat center top #fff;
-  border: 1px solid #fff;
-  box-shadow: 
-    0 0 3px rgba(0,0,0,0.5),
-    0 0 10px -2px rgba(0,0,0,0.2),
-    0 0 11px #000;
-  margin: 10px 30px;
-  padding: 10px 10px 20px 30px;
-}
-```
-
-Try to use such rules in common and avoid using specific rules like ```background-repeat``` or ```border-bottom-color```
-
-Use specific rules when you need to define only this specific rule for current selector, or when you need to redefine existing rule
+  
+  ```css
+  .my-class {
+    background: url(images/cat.png) no-repeat center top #fff;
+    border: 1px solid #fff;
+    box-shadow: 
+      0 0 3px rgba(0,0,0,0.5),
+      0 0 10px -2px rgba(0,0,0,0.2),
+      0 0 11px #000;
+    margin: 10px 30px;
+    padding: 10px 10px 20px 30px;
+  }
+  ```
+#####bad
+  ```css
+  .my-class {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 0px 10px -2px, black 0px 0px 11px 0px;
+    background-color: #fff;
+    background-image: url(images/cat.png);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  ```
