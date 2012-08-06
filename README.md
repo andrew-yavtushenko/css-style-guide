@@ -63,26 +63,24 @@
 
 ##Naming
 
-1. Class and ID names should be made with hyphens (-)   
-```.my-class, #special-offer``` good    
-```.myClass, .my_class, onemoreclass``` bad     
+1. Class and ID names should be made with dash (-)   
+ good:  ```.my-class, #special-offer```    
+  bad:  ```.myClass, .my_class, onemoreclass```     
 
 2. Don't use acronyms, class name should be long enough to make it readable, but not longer   
-```.big-userpic, .sidebar-quote, .banned-users```: good   
-```.b-pic, .sb-bdb, .wtf-omg, .sdfa-qweq```: bad    
+ good:  ```.big-userpic, .sidebar-quote, .banned-users```   
+  bad:  ```.b-pic, .sb-bdb, .wtf-omg, .sdfa-qweq```    
 
 3. Use ID only in that cases when you need to match something unique    
 
 4. Name classes and ID semantically, i.e. name it not by it's look but by it's function   
-```.promo-box, .selected-user, .remove-button``` good   
-```.black-box, .yellow-user, .red-button``` bad   
+ good:  ```.promo-box, .selected-user, .remove-button```   
+  bad:  ```.black-box, .yellow-user, .red-button```   
 if you can't make readable name for new class – you don't know what you're doing, read docs carefully one more time
 
 5. Use as much classes and tags in selector as you need to match your element, but not more   
-```ul a, .sidebar footer, h1 small```: good   
-```.list ul li .block a, body .wrapper.content .sidebar.left footer, body header h1 small``` bad    
-
-6. Don't use only classes IDs and tag names, try to use all power selector naming [read part "Selectors"]("https://dl.dropbox.com/u/4301006/css.pdf")
+ good:  ```ul a, .sidebar footer, h1 small```   
+  bad:  ```.list ul li .block a, body .wrapper.content .sidebar.left footer, body header h1 small```    
 
 
 ##Complex rules
